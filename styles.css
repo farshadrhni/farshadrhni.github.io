@@ -49,7 +49,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Centers text in this section */
 }
 
 /* Welcome title styling */
@@ -77,12 +77,18 @@ nav ul li a:hover {
 }
 
 .social-icons a {
-    margin: 0 10px;
+    margin: 0 10px; /* Add margin to separate icons */
     font-size: 1.5em;
     color: #007bff;
     transition: color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
 }
 
 .social-icons a:hover {
     color: #0056b3;
+}
+
+/* Remove unwanted lines between social icons */
+.social-icons a + a {
+    border-left: none; /* Ensures no left border is applied */
 }
