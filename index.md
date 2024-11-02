@@ -1,0 +1,2 @@
+# Farshad Rahmani
+Farshad Rahmani is a researcher in computational mechanics specializing in advanced simulation and numerical methods, including finite element (FE) and isogeometric analysis (IGA). His work focuses on the modeling and optimization of beam, plate, and shell structures, as well as functionally graded materials (FGMs).
