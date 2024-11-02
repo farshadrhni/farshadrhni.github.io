@@ -11,6 +11,7 @@
             margin: 0; 
             padding: 20px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -23,7 +24,7 @@
             color: #007bff; /* Blue color */
             font-weight: bold;
             margin-bottom: 20px;
-            text-align: center; /* Change this to left or right if needed */
+            text-align: center;
         }
 
         /* Bio text styling */
@@ -31,8 +32,21 @@
             font-size: 1.25em;
             max-width: 600px;
             line-height: 1.6;
-            text-align: center; /* Change this to left or right if needed */
+            text-align: center;
             color: #333;
+            margin-bottom: 20px; /* Adds space before the links */
+        }
+
+        /* Icon links styling */
+        .social-icons {
+            display: flex;
+            gap: 15px; /* Space between icons */
+        }
+
+        .social-icons img {
+            width: 40px; /* Size of the icons */
+            height: auto;
+            cursor: pointer; /* Changes cursor to pointer on hover */
         }
     </style>
 </head>
@@ -40,6 +54,21 @@
     <div>
         <h1 class="title">Farshad Rahmani</h1>
         <p class="bio">Farshad Rahmani is a researcher in computational mechanics specializing in advanced simulation and numerical methods, including finite element (FE) and isogeometric analysis (IGA). His work focuses on the modeling and optimization of beam, plate, and shell structures, as well as functionally graded materials (FGMs).</p>
+        
+        <div class="social-icons">
+            <a href="https://scholar.google.com/citations?user=XN_h7GIAAAAJ&hl=en" target="_blank">
+                <img src="link_to_scholar_icon.png" alt="Google Scholar">
+            </a>
+            <a href="https://www.researchgate.net/profile/Farshad-Rahmani-2" target="_blank">
+                <img src="link_to_researchgate_icon.png" alt="ResearchGate">
+            </a>
+            <a href="https://orcid.org/0000-0002-6926-5651" target="_blank">
+                <img src="link_to_orcid_icon.png" alt="ORCID">
+            </a>
+            <a href="https://www.linkedin.com/in/farshad-rahmani-58b71214b" target="_blank">
+                <img src="link_to_linkedin_icon.png" alt="LinkedIn">
+            </a>
+        </div>
     </div>
 </body>
 </html>
