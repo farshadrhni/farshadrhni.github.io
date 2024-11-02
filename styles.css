@@ -100,3 +100,54 @@ nav ul li a:hover {
 .social-icons a + a {
     border-left: none; /* Ensures no left border is applied */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce margin for stacked layout */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .section h1 {
+        font-size: 2em; /* Adjust main heading for mobile */
+    }
+
+    .section h2 {
+        font-size: 1.5em; /* Adjust subheadings for mobile */
+    }
+
+    .section p {
+        font-size: 1em; /* Smaller paragraph font size */
+    }
+
+    .social-icons a {
+        font-size: 1.2em; /* Reduce size of social media icons */
+    }
+}
+
+/* Extra Small Devices (mobile phones, 480px and down) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    nav ul li a {
+        padding: 8px 12px; /* Further adjust padding for mobile */
+    }
+
+    .section h1 {
+        font-size: 1.5em; /* Further adjust heading size */
+    }
+
+    .section h2 {
+        font-size: 1.25em; /* Further adjust subheading size */
+    }
+}
