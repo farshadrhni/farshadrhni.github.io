@@ -21,7 +21,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: flex; /* Align items horizontally */
     justify-content: center;
     padding: 10px 0; /* Adds padding for better appearance */
     background-color: #333;
@@ -81,16 +81,16 @@ nav ul li a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;         /* Allow icons to wrap on smaller screens */
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
     margin-top: 20px;
 }
 
 .social-icons a {
-    margin: 0 10px;         /* Add margin to separate icons */
+    margin: 0 10px; /* Add margin to separate icons */
     font-size: 1.5em;
     color: #007bff;
     transition: color 0.3s ease;
-    text-decoration: none;   /* Remove underline from links */
+    text-decoration: none; /* Remove underline from links */
 }
 
 /* Hover effect for social icons */
@@ -101,8 +101,8 @@ nav ul li a:hover {
 /* Responsive Styles for Social Media Icons */
 @media (max-width: 768px) {
     .social-icons a {
-        font-size: 1.2em;     /* Adjust size of social media icons for smaller screens */
-        margin: 0 5px;        /* Reduce margin for tighter spacing */
+        font-size: 1.2em; /* Adjust size of social media icons for smaller screens */
+        margin: 0 5px; /* Reduce margin for tighter spacing */
     }
 }
 
@@ -112,19 +112,21 @@ nav ul li a:hover {
     }
 
     .social-icons a {
-        font-size: 1.1em;     /* Further reduce icon size for extra small devices */
-        margin: 0 3px;        /* Further reduce margin for extra small devices */
+        font-size: 1.1em; /* Further reduce icon size for extra small devices */
+        margin: 0 3px; /* Further reduce margin for extra small devices */
     }
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    /* Removed vertical stacking to keep links horizontal */
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
+        flex-direction: row; /* Keep navigation items horizontal */
+        justify-content: center; /* Center items */
     }
 
     nav ul li {
-        margin: 5px 0; /* Reduce margin for stacked layout */
+        margin: 5px 10px; /* Adjust margin for more space */
     }
 
     nav ul li a {
