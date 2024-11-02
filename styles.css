@@ -81,24 +81,40 @@ nav ul li a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;         /* Allow icons to wrap on smaller screens */
     margin-top: 20px;
 }
 
 .social-icons a {
-    margin: 0 10px; /* Add margin to separate icons */
+    margin: 0 10px;         /* Add margin to separate icons */
     font-size: 1.5em;
     color: #007bff;
     transition: color 0.3s ease;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;   /* Remove underline from links */
 }
 
+/* Hover effect for social icons */
 .social-icons a:hover {
     color: #0056b3;
 }
 
-/* Remove unwanted lines between social icons */
-.social-icons a + a {
-    border-left: none; /* Ensures no left border is applied */
+/* Responsive Styles for Social Media Icons */
+@media (max-width: 768px) {
+    .social-icons a {
+        font-size: 1.2em;     /* Adjust size of social media icons for smaller screens */
+        margin: 0 5px;        /* Reduce margin for tighter spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons {
+        justify-content: space-around; /* Distribute space evenly on very small screens */
+    }
+
+    .social-icons a {
+        font-size: 1.1em;     /* Further reduce icon size for extra small devices */
+        margin: 0 3px;        /* Further reduce margin for extra small devices */
+    }
 }
 
 /* Responsive Styles */
@@ -126,10 +142,6 @@ nav ul li a:hover {
 
     .section p {
         font-size: 1em; /* Smaller paragraph font size */
-    }
-
-    .social-icons a {
-        font-size: 1.2em; /* Reduce size of social media icons */
     }
 }
 
