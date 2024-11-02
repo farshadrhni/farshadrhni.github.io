@@ -19,6 +19,7 @@ nav ul {
     padding: 0;
     background-color: #333;
     margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for 3D effect */
 }
 
 nav ul li {
@@ -29,10 +30,18 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Eye-catching gradient */
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.1); /* 3D effect */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #fff;
+    background: linear-gradient(145deg, #0056b3, #003a75); /* Darker gradient on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
 /* Section styling */
@@ -41,6 +50,23 @@ nav ul li a:hover {
     margin: auto;
     padding: 20px;
     text-align: center;
+}
+
+/* Welcome title styling */
+.section h1 {
+    font-size: 2.5em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Introduction paragraph styling */
+.section p {
+    font-size: 1.25em;
+    color: #555;
+    line-height: 1.6;
+    font-family: Georgia, serif;
 }
 
 /* Social Media icons styling */
@@ -54,6 +80,7 @@ nav ul li a:hover {
     margin: 0 10px;
     font-size: 1.5em;
     color: #007bff;
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
