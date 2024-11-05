@@ -8,25 +8,25 @@ body {
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center the main container */
 }
 
 /* Navigation Bar styling */
 nav {
-    position: fixed;
+    position: fixed; /* Fixes the navigation bar at the top */
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* Ensures the nav stays above other content */
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: flex; /* Align items horizontally */
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 0; /* Adds padding for better appearance */
     background-color: #333;
     margin: 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for 3D effect */
 }
 
 nav ul li {
@@ -38,29 +38,32 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     padding: 10px 20px;
-    background: linear-gradient(145deg, #007bff, #0056b3);
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Eye-catching gradient */
     border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.1); /* 3D effect */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 nav ul li a:hover {
-    background: linear-gradient(145deg, #0056b3, #003a75);
+    color: #fff;
+    background: linear-gradient(145deg, #0056b3, #003a75); /* Darker gradient on hover */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
 /* Section styling */
 .section {
     max-width: 800px;
-    margin: 80px auto 20px; /* Add top margin for spacing below fixed nav */
+    margin: auto;
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Centers text in this section */
+    margin-top: 70px; /* Adds margin to ensure content is not hidden under the fixed nav */
 }
 
 /* Welcome title styling */
 .section h1 {
     font-size: 2.5em;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
@@ -68,113 +71,134 @@ nav ul li a:hover {
 
 /* Research section styling */
 .research-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: left; /* Align text to the left */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    max-width: 800px; /* Ensure it doesn't exceed main section width */
+    margin: 40px auto; /* Center the section with margin above and below */
+    padding: 20px; /* Add padding for better appearance */
 }
 
 /* Research Interests and Projects Titles */
 .research-section h2 {
-    font-size: 2em;
-    color: black;
-    margin-bottom: 10px;
+    font-size: 2em; /* Heading size */
+    color: black; /* Heading color */
+    margin-bottom: 10px; /* Spacing below heading */
 }
 
-/* Research Interests and Projects list styling */
+/* Align titles */
+.research-titles {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Align descriptions */
+.research-descriptions {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space items evenly */
+    margin-bottom: 15px; /* Space between descriptions and content */
+}
+
+/* Paragraph styling */
+.research-section p {
+    font-size: 1.1em; /* Paragraph font size */
+    color: black; /* Change color to black for descriptions */
+    line-height: 1.5; /* Line height for better readability */
+    margin: 0; /* Remove margin for uniformity */
+}
+
+/* Research interests list styling */
 .research-interests,
 .research-projects {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: black;
-    margin-top: 0;
-}
-
-/* Paragraph styling for descriptions */
-.research-section p {
-    font-size: 1.1em;
-    color: black;
-    line-height: 1.5;
-    margin: 0;
+    list-style-type: disc; /* Bullet points for interests/projects */
+    padding-left: 20px; /* Indentation for list */
+    color: black; /* Change color to black for list items */
 }
 
 /* Social Media icons styling */
 .social-icons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
     margin-top: 20px;
 }
 
 .social-icons a {
-    margin: 0 10px;
+    margin: 0 10px; /* Add margin to separate icons */
     font-size: 1.5em;
     color: #007bff;
     transition: color 0.3s ease;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
 }
 
+/* Hover effect for social icons */
 .social-icons a:hover {
     color: #0056b3;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Social Media Icons */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    nav ul li {
-        margin: 5px 10px;
-    }
-
-    nav ul li a {
-        padding: 10px 15px;
-        font-size: 1em;
-    }
-
-    .section h1 {
-        font-size: 2em;
-    }
-
-    .section h2 {
-        font-size: 1.5em;
-    }
-
-    .section p {
-        font-size: 1em;
-    }
-
     .social-icons a {
-        font-size: 1.2em;
-        margin: 0 5px;
+        font-size: 1.2em; /* Adjust size of social media icons for smaller screens */
+        margin: 0 5px; /* Reduce margin for tighter spacing */
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    nav ul li a {
-        padding: 8px 12px;
-    }
-
-    .section h1 {
-        font-size: 1.5em;
-    }
-
-    .section h2 {
-        font-size: 1.25em;
-    }
-
     .social-icons {
-        justify-content: space-around;
+        justify-content: space-around; /* Distribute space evenly on very small screens */
     }
 
     .social-icons a {
-        font-size: 1.1em;
-        margin: 0 3px;
+        font-size: 1.1em; /* Further reduce icon size for extra small devices */
+        margin: 0 3px; /* Further reduce margin for extra small devices */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Removed vertical stacking to keep links horizontal */
+    nav ul {
+        flex-direction: row; /* Keep navigation items horizontal */
+        justify-content: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Adjust margin for more space */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .section h1 {
+        font-size: 2em; /* Adjust main heading for mobile */
+    }
+
+    .section h2 {
+        font-size: 1.5em; /* Adjust subheadings for mobile */
+    }
+
+    .section p {
+        font-size: 1em; /* Smaller paragraph font size */
+    }
+}
+
+/* Extra Small Devices (mobile phones, 480px and down) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    nav ul li a {
+        padding: 8px 12px; /* Further adjust padding for mobile */
+    }
+
+    .section h1 {
+        font-size: 1.5em; /* Further adjust heading size */
+    }
+
+    .section h2 {
+        font-size: 1.25em; /* Further adjust subheading size */
     }
 }
