@@ -77,91 +77,50 @@ nav ul li a:hover {
     font-family: Georgia, serif;
 }
 
+/* Research section styling */
+.research-section {
+    max-width: 800px; /* Ensure it doesn't exceed main section width */
+    margin: 40px auto; /* Center the section with margin above and below */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding for better appearance */
+}
+
+.research-section h2 {
+    font-size: 2em; /* Heading size */
+    color: #333; /* Heading color */
+    margin-bottom: 15px; /* Spacing below heading */
+}
+
+.research-section p {
+    font-size: 1.1em; /* Paragraph font size */
+    color: #555; /* Paragraph color */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.research-interests {
+    list-style-type: disc; /* Bullet points for interests */
+    padding-left: 20px; /* Indentation for list */
+}
+
+/* Research projects styling */
+.research-projects {
+    margin-top: 20px; /* Space above research projects */
+}
+
+.research-projects h2 {
+    font-size: 2em; /* Heading size */
+    color: #333; /* Heading color */
+    margin-bottom: 15px; /* Spacing below heading */
+}
+
+.research-projects p {
+    font-size: 1.1em; /* Paragraph font size */
+    color: #555; /* Paragraph color */
+    line-height: 1.5; /* Line height for better readability */
+}
+
 /* Social Media icons styling */
 .social-icons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
-    margin-top: 20px;
-}
-
-.social-icons a {
-    margin: 0 10px; /* Add margin to separate icons */
-    font-size: 1.5em;
-    color: #007bff;
-    transition: color 0.3s ease;
-    text-decoration: none; /* Remove underline from links */
-}
-
-/* Hover effect for social icons */
-.social-icons a:hover {
-    color: #0056b3;
-}
-
-/* Responsive Styles for Social Media Icons */
-@media (max-width: 768px) {
-    .social-icons a {
-        font-size: 1.2em; /* Adjust size of social media icons for smaller screens */
-        margin: 0 5px; /* Reduce margin for tighter spacing */
-    }
-}
-
-@media (max-width: 480px) {
-    .social-icons {
-        justify-content: space-around; /* Distribute space evenly on very small screens */
-    }
-
-    .social-icons a {
-        font-size: 1.1em; /* Further reduce icon size for extra small devices */
-        margin: 0 3px; /* Further reduce margin for extra small devices */
-    }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    /* Removed vertical stacking to keep links horizontal */
-    nav ul {
-        flex-direction: row; /* Keep navigation items horizontal */
-        justify-content: center; /* Center items */
-    }
-
-    nav ul li {
-        margin: 5px 10px; /* Adjust margin for more space */
-    }
-
-    nav ul li a {
-        padding: 10px 15px; /* Adjust padding for smaller screens */
-        font-size: 1em; /* Smaller font size for mobile */
-    }
-
-    .section h1 {
-        font-size: 2em; /* Adjust main heading for mobile */
-    }
-
-    .section h2 {
-        font-size: 1.5em; /* Adjust subheadings for mobile */
-    }
-
-    .section p {
-        font-size: 1em; /* Smaller paragraph font size */
-    }
-}
-
-/* Extra Small Devices (mobile phones, 480px and down) */
-@media (max-width: 480px) {
-    body {
-        padding: 10px; /* Less padding on smaller screens */
-    }
-
-    nav ul li a {
-        padding: 8px 12px; /* Further adjust padding for mobile */
-    }
-
-    .section h1 {
-        font-size: 1.5em; /* Further adjust heading size */
-    }
-
-    .section h2 {
-        font-size: 1.25em; /* Further adjust subheading size */
-    }
-}
+    flex-wrap: wrap; /* Allow icons to w
