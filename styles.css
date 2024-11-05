@@ -82,7 +82,7 @@ nav ul li a:hover {
 .research-section h2 {
     font-size: 2em; /* Heading size */
     color: black; /* Heading color */
-    margin-bottom: 20px; /* Spacing below heading */
+    margin-bottom: 10px; /* Spacing below heading */
 }
 
 /* Align titles */
@@ -95,7 +95,7 @@ nav ul li a:hover {
 .research-descriptions {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: space-between; /* Space items evenly */
-    margin-bottom: 20px; /* Space between descriptions and content */
+    margin-bottom: 15px; /* Space between descriptions and content */
 }
 
 /* Paragraph styling */
