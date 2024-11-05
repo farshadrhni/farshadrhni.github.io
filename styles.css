@@ -69,26 +69,32 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Introduction paragraph styling */
-.section p {
-    font-size: 1.25em;
-    color: #555;
-    line-height: 1.6;
-    font-family: Georgia, serif;
-}
-
 /* Research section styling */
 .research-section {
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
     max-width: 800px; /* Ensure it doesn't exceed main section width */
     margin: 40px auto; /* Center the section with margin above and below */
-    text-align: left; /* Align text to the left */
     padding: 20px; /* Add padding for better appearance */
 }
 
+/* Research Interests and Projects Titles */
 .research-section h2 {
     font-size: 2em; /* Heading size */
     color: #333; /* Heading color */
-    margin-bottom: 15px; /* Spacing below heading */
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.research-titles {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Align descriptions */
+.research-descriptions {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space items evenly */
+    margin-bottom: 15px; /* Space between descriptions and content */
 }
 
 .research-section p {
@@ -100,6 +106,12 @@ nav ul li a:hover {
 /* Research interests list styling */
 .research-interests {
     list-style-type: disc; /* Bullet points for interests */
+    padding-left: 20px; /* Indentation for list */
+}
+
+/* Research projects list styling */
+.research-projects {
+    list-style-type: disc; /* Bullet points for projects */
     padding-left: 20px; /* Indentation for list */
 }
 
