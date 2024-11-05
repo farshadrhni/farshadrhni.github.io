@@ -81,10 +81,11 @@ nav ul li a:hover {
 /* Research Interests and Projects Titles */
 .research-section h2 {
     font-size: 2em; /* Heading size */
-    color:  black; /* Heading color */
+    color: black; /* Heading color */
     margin-bottom: 10px; /* Spacing below heading */
 }
 
+/* Align titles */
 .research-titles {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: space-between; /* Space items evenly */
@@ -97,22 +98,20 @@ nav ul li a:hover {
     margin-bottom: 15px; /* Space between descriptions and content */
 }
 
+/* Paragraph styling */
 .research-section p {
     font-size: 1.1em; /* Paragraph font size */
-    color: #555; /* Paragraph color */
+    color: black; /* Change color to black for descriptions */
     line-height: 1.5; /* Line height for better readability */
+    margin: 0; /* Remove margin for uniformity */
 }
 
 /* Research interests list styling */
-.research-interests {
-    list-style-type: disc; /* Bullet points for interests */
-    padding-left: 20px; /* Indentation for list */
-}
-
-/* Research projects list styling */
+.research-interests,
 .research-projects {
-    list-style-type: disc; /* Bullet points for projects */
+    list-style-type: disc; /* Bullet points for interests/projects */
     padding-left: 20px; /* Indentation for list */
+    color: black; /* Change color to black for list items */
 }
 
 /* Social Media icons styling */
