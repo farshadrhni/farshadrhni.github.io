@@ -95,7 +95,7 @@ nav ul li a:hover {
 .research-descriptions {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: space-between; /* Space items evenly */
-    margin-bottom: 15px; /* Space between descriptions and content */
+    margin-bottom: 20px; /* Space between descriptions and content */
 }
 
 /* Paragraph styling */
