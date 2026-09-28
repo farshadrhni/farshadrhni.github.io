@@ -45,6 +45,6 @@ My work focuses on advanced modeling, simulation, and optimization of beam, plat
 
 
 
-## Website design draft
+## Portfolio design draft
 
-Static HTML, CSS, and SVG; no build step or external font dependencies. Serve this directory with `python3 -m http.server 8000`. Publication metadata is preserved from the original website and still needs checking against Google Scholar before release. The mesh illustration is decorative, not a simulation result. This branch is a design preview.
+Five static pages using HTML, CSS, and JavaScript. No build step. Serve with `python3 -m http.server 8000`. Publication metadata is retained from the original site and requires verification against Google Scholar. Add approved research figures and an up-to-date CV when available.
