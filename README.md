@@ -43,3 +43,8 @@ My work focuses on advanced modeling, simulation, and optimization of beam, plat
 ![Farshad's GitHub Stats](https://github-readme-stats.vercel.app/api?username=farshadrhni&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=farshadrhni&layout=compact&theme=radical)
 
+
+
+## Website design draft
+
+Static HTML, CSS, and SVG; no build step or external font dependencies. Serve this directory with `python3 -m http.server 8000`. Publication metadata is preserved from the original website and still needs checking against Google Scholar before release. The mesh illustration is decorative, not a simulation result. This branch is a design preview.
