@@ -1,0 +1,2 @@
+const year = document.querySelector('#year');
+if(year) year.addEventListener('change', () => { let count = 0; document.querySelectorAll('.publication').forEach(row => { row.hidden = year.value !== 'all' && row.dataset.year !== year.value; if(!row.hidden) count++; }); document.querySelector('#count').textContent = `${count} publication${count === 1 ? '' : 's'} listed`; });
