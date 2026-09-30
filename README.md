@@ -48,3 +48,8 @@ My work focuses on advanced modeling, simulation, and optimization of beam, plat
 ## Portfolio design draft
 
 Five static pages using HTML, CSS, and JavaScript. No build step. Serve with `python3 -m http.server 8000`. Publication metadata is retained from the original site and requires verification against Google Scholar. Add approved research figures and an up-to-date CV when available.
+
+
+## Midnight Research design
+
+Dark navy hero with an illustrative AI-generated mechanics image, explicitly labeled as not research results. Research Focus includes continuum, solid, and computational mechanics. FEM precedes IGA. Institution names requested hidden are retained as HTML comments. Projects is intentionally empty. Preview remains on the design branch.
